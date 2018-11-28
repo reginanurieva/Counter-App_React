@@ -14,6 +14,11 @@ class App extends Component {
     ]
  };
 
+ constructor() {
+   super();
+   console.log('App - Constructor');
+ }
+
  handleReset = () => {
     const counters = this.state.counters.map(c => {
          c.value = 0;
